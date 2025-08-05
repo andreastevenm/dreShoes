@@ -1,86 +1,38 @@
-* {
-  padding: 0;
-  margin: 0;
-  font-family: sans-serif;
+/* flex-wrap: wrap; this is for the mobile responsive! */
+/* justify-content: center; this is only for the horizontal of each line box */
+/* align-items: center; this is only for the vertical of each line box */
+/* align-content: center; this is for all of the box */
+
+/* Justify (horizontal) --- Align-items (vertical) */
+/* justify-content: space-between;
+  align-items: center; */
+/* flex-shrink */
+/* flex-grow (the opposite of flex-shrink */
+
+body {
+  min-height: 800px;
+  border: solid;
+  display: flex;
+  gap: 10px;
 }
 
-/* Navbar Section */
+.box {
+  height: 200px;
+  width: 200px;
+  background-color: #0071ff;
+  font-size: 40pt;
+  /* Option 1 */
+  /* align-content: center;
+  text-align: center; */
 
-.navbar {
-  margin-top: 10px;
-  padding: 10px;
+  /* Option 2 */
   display: flex;
-  margin-left: 10px;
-  /* border: solid; */
-  justify-content: center;
   align-items: center;
+  justify-content: center;
 }
 
-.h1-navbar {
-  margin-left: 10px;
-  font-size: 25px;
-}
-
-.navbar,
-h1 {
-  font-size: larger;
-  /* margin-bottom: 10px; */
-}
-
-.navlinks {
-  display: flex;
-  list-style: none;
-  font-size: large;
-  justify-content: right;
-  align-items: end;
-  /* border: solid; */
-  width: 100%;
-  padding-right: 194px;
-}
-
-li {
-  padding-right: 70px;
-  cursor: pointer;
-}
-
-/* Landing Page */
-
-.main {
-  display: flex;
-  /* align-items: center; */
-  /* border: solid; */
-}
-
-.main h1 {
-  font-style: italic;
-  font-size: 50px;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-}
-
-.main h3 {
-  font-size: 21px;
-}
-
-.landing-page {
-  /* border: solid; */
-  text-align: center;
-  padding-top: 200px;
-  margin: 0px 100px 0px 100px;
-  /* margin-top: 50px; */
-  font-size: 20px;
-}
-
-.landing-page h1,
-h3,
-p {
-  padding: 15px;
-}
-
-img {
-  /* border: solid; */
-  margin-right: 120px;
-  height: 800px;
-  width: auto;
-  transform: translateX(30px);
-  transform: translateY(-120px);
+@media (max-width: 575px) {
+  body {
+    flex-wrap: wrap;
+  }
 }
