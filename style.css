@@ -51,6 +51,10 @@ li {
   margin-right: 40px;
 }
 
+.text p {
+  font-family: cursive;
+}
+
 .text h1 {
   font-style: unset;
   font-size: 60px;
