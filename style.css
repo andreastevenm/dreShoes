@@ -1,38 +1,64 @@
-/* flex-wrap: wrap; this is for the mobile responsive! */
-/* justify-content: center; this is only for the horizontal of each line box */
-/* align-items: center; this is only for the vertical of each line box */
-/* align-content: center; this is for all of the box */
-
-/* Justify (horizontal) --- Align-items (vertical) */
-/* justify-content: space-between;
-  align-items: center; */
-/* flex-shrink */
-/* flex-grow (the opposite of flex-shrink */
-
-body {
-  min-height: 800px;
-  border: solid;
-  display: flex;
-  gap: 10px;
+* {
+  padding: 0;
+  margin: 0;
+  font-family: cursive;
 }
 
-.box {
-  height: 200px;
-  width: 200px;
-  background-color: #0071ff;
-  font-size: 40pt;
-  /* Option 1 */
-  /* align-content: center;
-  text-align: center; */
-
-  /* Option 2 */
+/* Navbar */
+.navbar {
   display: flex;
+  font-size: larger;
+  padding-bottom: 10px;
+}
+
+.navbar h1 {
+  padding-left: 24px;
+}
+
+.navlinks {
+  display: flex;
+  width: 85%;
+  list-style: none;
+  align-items: end;
+  justify-content: end;
+}
+
+li {
+  margin-right: 50px;
+  cursor: pointer;
+}
+
+/* Landing Page */
+.main {
+  display: flex;
+  /* border: solid; */
+  height: 92vh;
+}
+
+.text {
+  font-size: larger;
+  /* border: solid; */
+  width: 50%;
+  text-align: center;
+  align-content: center;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.text h1 {
+  font-style: unset;
+  font-size: 60px;
+}
+
+.image {
+  /* border: solid; */
   align-items: center;
   justify-content: center;
+  margin: 0 auto;
+  height: auto;
 }
 
-@media (max-width: 575px) {
-  body {
-    flex-wrap: wrap;
-  }
+.img {
+  /* border: solid; */
+  transform: translateY(90px) scale(2);
 }
