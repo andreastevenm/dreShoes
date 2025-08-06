@@ -55,10 +55,10 @@ li {
   align-items: center;
   justify-content: center;
   margin: 0 auto;
-  height: auto;
+  padding-top: 90px;
 }
 
 .img {
   /* border: solid; */
-  transform: translateY(90px) scale(2);
+  transform: translateY(-35px) scale(2);
 }
