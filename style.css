@@ -1,7 +1,13 @@
 * {
+  box-sizing: border-box;
+  background-color: whitesmoke;
   padding: 0;
   margin: 0;
   font-family: cursive;
+}
+
+body {
+  overflow-x: hidden;
 }
 
 /* Navbar */
@@ -55,10 +61,13 @@ li {
   align-items: center;
   justify-content: center;
   margin: 0 auto;
+  width: 52%;
   padding-top: 90px;
 }
 
 .img {
   /* border: solid; */
-  transform: translateY(-35px) scale(2);
+  transform: translateY(-35px) scale(1);
+  z-index: 1; /* using this to make it behind the picture! */
+  pointer-events: none;
 }
