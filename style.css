@@ -1,77 +1,80 @@
 * {
-  box-sizing: border-box;
-  background-color: whitesmoke;
-  padding: 0;
   margin: 0;
-  font-family: cursive;
+  padding: 0;
 }
 
 body {
+  font-family: sans-serif;
+  background-color: whitesmoke;
   overflow-x: hidden;
 }
 
 /* Navbar */
-.navbar {
+
+nav {
   display: flex;
+  margin-left: 10px;
+  padding-top: 10px;
+  margin-bottom: 17px;
   font-size: larger;
-  padding-bottom: 10px;
 }
 
-.navbar h1 {
-  padding-left: 24px;
+nav h1 {
+  font-size: 25px;
+  font-style: italic;
+  font-family: cursive;
+  font-weight: 900;
 }
 
 .navlinks {
-  display: flex;
   width: 85%;
+  /* border: solid; */
+  display: flex;
   list-style: none;
-  align-items: end;
   justify-content: end;
-}
-
-li {
-  margin-right: 50px;
+  align-items: center;
+  align-content: center;
   cursor: pointer;
 }
 
-/* Landing Page */
+.navmenu {
+  padding-right: 60px;
+}
+
+/* Landing page */
+
 .main {
-  display: flex;
   /* border: solid; */
-  height: 92vh;
+  display: flex;
+}
+
+.landing-page {
+  /* border: solid; */
+  font-size: large;
+  align-content: center;
+  text-align: center;
+  min-width: 48%;
+  padding: 0px 5px;
+}
+
+.landing-page h1 {
+  font-size: 50px;
+  color: goldenrod;
+  font-style: italic;
+}
+.t,
+.text {
+  padding-bottom: 7px;
+  position: relative;
 }
 
 .text {
-  font-size: larger;
   /* border: solid; */
-  width: 50%;
-  text-align: center;
-  align-content: center;
-  margin-left: 40px;
-  margin-right: 40px;
-}
-
-.text p {
-  font-family: cursive;
-}
-
-.text h1 {
-  font-style: unset;
-  font-size: 60px;
+  left: 5%;
+  width: 90%;
 }
 
 .image {
-  /* border: solid; */
-  align-items: center;
-  justify-content: center;
-  margin: 0 auto;
-  width: 52%;
-  padding-top: 90px;
-}
-
-.img {
-  /* border: solid; */
-  transform: translateY(-35px) scale(1);
-  z-index: 1; /* using this to make it behind the picture! */
+  transform: translateX(1px);
   pointer-events: none;
 }
